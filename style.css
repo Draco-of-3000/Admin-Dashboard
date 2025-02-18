@@ -171,10 +171,30 @@
 
 .trending {
     display: grid;
-    grid-row: 6 / 11;
+    grid-row: 7 / 11;
     border: 2px solid black;
+    padding: 10px;
 }
 
-.users {
-    background-color: white;
+.trending .users {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr;
+    background-color: bisque;
+    border: 1px solid black;
+}
+
+
+.trending .profile-pic-lg {
+    align-self: center;
+}
+
+.user-info {
+    justify-self: start;
+    align-self: center;
+    margin-left: 20px;
+}
+
+.trending p {
+    text-align: left;
 }
