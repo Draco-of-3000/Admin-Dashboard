@@ -96,6 +96,11 @@
     height: 80vh;
 }
 
+.project-title, .ann-title, .trending-title {
+    align-self: end;
+    justify-self: start;
+}
+
 .projects {
     background-color: #bccbde;
     display: grid;
@@ -103,7 +108,8 @@
     padding: 15px;
     grid-row: span 10;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 1fr)
+    grid-template-rows: repeat(3, 1fr);
+    grid-row: 2 / 11;
 }
 
 .card {
@@ -119,6 +125,7 @@
     place-items: center;
     padding: 10px;
     border: 2px solid black;
+    grid-row: 2 / 6; 
 }
 
 .trending {
@@ -132,7 +139,8 @@
 
 .trending {
     display: grid;
-    grid-row: span 4;
+    grid-row: 6 / 11;
+    border: 2px solid black;
 }
 
 .users {
