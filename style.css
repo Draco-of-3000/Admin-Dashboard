@@ -112,9 +112,28 @@
     grid-row: 2 / 11;
 }
 
+.projects p {
+    text-align: left;
+}
+
 .card {
-    background-color: white;
     display: grid;
+    background-color: white;
+    padding: 40px;
+}
+
+.card .title {
+    font-size: 18px;
+    font-weight: bold;
+    align-self: end;
+} 
+
+.card p:nth-child(2){
+    color: blue;
+}
+
+.cta-icns {
+    justify-self: end;
 }
 
 .announcements {
