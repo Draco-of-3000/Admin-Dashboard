@@ -15,15 +15,12 @@ img {
     display: grid;
     grid-template-columns: 1fr 6fr;
     grid-template-rows: repeat(4, 1fr);
-    gap: 4px;
-    padding: 10px;
-    background-color: aqua;
-    border: 2px solid burlywood;
+    background-color: #d9d9d9;
 }
 
 .sidebar {
     display: grid;
-    background-color: blueviolet;
+    background-color: #dc0e62;
     grid-row: span 4;
     grid-template-rows: repeat(20, 1fr);
     gap: 30px;
@@ -76,7 +73,7 @@ img {
 
 
 .header {
-    background-color: bisque;
+    background-color: white;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr 1fr;
@@ -87,31 +84,34 @@ img {
 }
 
 .search {
-    background-color: antiquewhite;
+    background-color: ;
     grid-column: span 2;
-    display: grid;
-    grid-template-columns: 1fr 5fr;
-    justify-content: center;
+    display: flex;
+    justify-self: start;
     align-items: center;
     gap: 20px;
+    width: 80%;
 }
 
 .search-icn {
+    justify-self: end;
     align-self: center;
 }
 
 .search-input {
     border-radius: 20px;
     border: none;
-    height: 50%;
+    height: 70%;
     width: 70%;
+    background-color: #d9d9d9;
 }
 
 .greeting {
     grid-column: 1;
     grid-row: 2;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
+    justify-self: start;
     place-items: center;
 }
 
@@ -135,18 +135,17 @@ img {
 .profile-details {
     background-color: aliceblue;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
-    gap: 20px;
+    gap: 40px;
     grid-column: 3;
     grid-row: 1;
+    margin-right: 20px;
 }
 
 .buttons {
-    background-color: blueviolet;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-end;
     gap: 15px;
     grid-column: 3;
     grid-row: 2;
@@ -154,9 +153,12 @@ img {
 }
 
 .button {
-    height: 50px;
-    width: 150px;
+    height: 40px;
+    width: 140px;
     border-radius: 30px;
+    background-color: #dc0e62;
+    color: white;
+    border: none;
 }
 
 .main-content {
@@ -195,7 +197,7 @@ img {
     display: grid;
     background-color: white;
     padding: 40px;
-    border-left: 10px solid beige;
+    border-left: 10px solid #dc0e62;
     border-radius: 8px;
 }
 
