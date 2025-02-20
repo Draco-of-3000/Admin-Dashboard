@@ -80,6 +80,8 @@ img {
     grid-column: 2 / 3;
     grid-row: 1;
     padding: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
     gap: 20px;
 }
 
@@ -101,7 +103,7 @@ img {
 .search-input {
     border-radius: 20px;
     border: none;
-    height: 70%;
+    height: 50%;
     width: 70%;
     background-color: #d9d9d9;
 }
@@ -118,7 +120,20 @@ img {
 .profile-pic-lg {
     grid-row: span 2;
     justify-self: end;
+    width: 70px; 
+    height: 70px;  /* Must match width for perfect circle */
+    border-radius: 50%; /* Make image circular */
+    object-fit: cover;  /* Ensures image fills circle without distortion */
+    display: block;  /* Removes default image spacing */
 }
+
+.profile-pic-reg {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+} 
 
 .header .user-info {
     grid-column: 2;
@@ -133,14 +148,13 @@ img {
 }
 
 .profile-details {
-    background-color: aliceblue;
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    gap: 40px;
+    gap: 25px;
     grid-column: 3;
     grid-row: 1;
-    margin-right: 20px;
+    margin-right: 120px;
 }
 
 .buttons {
