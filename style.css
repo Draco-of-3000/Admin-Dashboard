@@ -308,9 +308,6 @@ img {
     align-self: start;
 } 
 
-.card p:nth-child(2){
-}
-
 .cta-icns {
     display: flex;
     justify-self: end;
