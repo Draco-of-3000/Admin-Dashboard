@@ -1,2 +1,2 @@
 # Admin-Dashboard
-Creating an admin dashboard with css grid and a bit of flexbox
+An admin dashboard created with CSS Grid and a bit of Flexbox
