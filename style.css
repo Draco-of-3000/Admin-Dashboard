@@ -7,6 +7,7 @@ body {
     font:
         1em "sf_pro_displayregular",
         monospace;
+    background-color: #e2e8f0;
 }
 
 @font-face {
@@ -56,61 +57,65 @@ img {
     background-color: #1992d4;
     grid-row: span 4;
     grid-template-rows: repeat(20, 1fr);
+    grid-template-columns: 1fr;
     gap: 30px;
     padding: 20px;
 }
 
-.side-nav, .side-help {
+.icon-text {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: auto 1fr; /* Icon in first column, text in second column */
+    align-items: center;
+    justify-items: start;
     gap: 15px;
 }
 
-.side-nav {
-    align-content: start;
-    grid-row: 3;
+.icon {
+    width: 24px;
+    height: 24px;
+    grid-column: 1;
+    margin-left: 10px;
+}
+
+.text {
+    font:
+        1.3em "sf_pro_displaybold",
+        monospace;
+    color: white;
+    grid-column: 2;
+    margin-left: 16px;
+}
+
+.nav-icons {
+    display: grid;
+    gap: 25px;
+    margin-bottom: 50px;
+}
+
+.help-icons {
+    display: grid;
+    gap: 25px;
+}
+
+.logo-icon-dad {
+    display: grid;
+    margin-bottom: 50px;
 }
 
 .sidebar img {
     filter: invert(1)
 }
 
-.side-content {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    color: white;
-}
-
-.side-help {
-    align-content: start;
-    grid-row: 5;
-}
-
-.logo {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.logo img {
+.logo-icon {
     height: 50px;
     width: 50px;
 }
 
-.logo .logo-text{
+.logo-text{
     font-size: 1.5rem;
     font-weight: bold;
     color: white;
 }
-
-.side-content .logo-text {
-    font:
-        1.3em "sf_pro_displaybold",
-        monospace;
-}
-
-
 .header {
     background-color: white;
     display: grid;
@@ -178,8 +183,8 @@ img {
 }
 
 .profile-pic-reg {
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     object-fit: cover;
     display: block;
